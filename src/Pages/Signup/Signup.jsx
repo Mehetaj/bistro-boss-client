@@ -27,7 +27,7 @@ const Signup = () => {
 
                                 const saveUser = { name: data.name, email: data.email }
 
-                                fetch('https://bistro-boss-server-blond.vercel.app/users', {
+                                fetch('https://bistro-boss-server-blond.vercel.app//users', {
                                     method: 'POST',
                                     headers: { 'content-type': 'application/json' },
                                     body: JSON.stringify(saveUser)

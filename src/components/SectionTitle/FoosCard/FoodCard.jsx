@@ -16,7 +16,7 @@ const FoodCard = ({ item }) => {
         console.log(item);
         if (user && user.email) {
             const cartItem = {menuItemID : _id, name,image,price,email: user?.email}
-            fetch('https://bistro-boss-server-blond.vercel.app/carts', {
+            fetch('https://bistro-boss-server-blond.vercel.app//carts', {
                 method: 'POST',
                 headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(cartItem)

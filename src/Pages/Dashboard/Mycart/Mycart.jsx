@@ -23,7 +23,7 @@ const Mycart = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 console.log(item._id);
-                fetch(`https://bistro-boss-server-blond.vercel.app/carts/${item._id}`, {
+                fetch(`https://bistro-boss-server-blond.vercel.app//carts/${item._id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json()).then(data => {
